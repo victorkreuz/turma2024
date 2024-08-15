@@ -13,19 +13,16 @@ public class VoteCounter {
         System.out.println("Informe os votos válidos:");
         int votosVálidos = entrada.nextInt();
         int total = votosBrancos + votosNulos + votosVálidos;
-        System.out.println("Total de votos:"+total);
-        
-        double porcentagemB = votosBrancos*100/total;
-        System.out.println("Porcentagem de votos brancos:"+porcentagemB+"%");
-        
-        double porcentagemN = votosNulos*100/total;
-        System.out.println("Porcentagem de votos nulos:"+porcentagemN+"%");
-        
-        double porcentagemV = votosVálidos*100/total;
-        System.out.println("Porcentagem de votos válidos:"+porcentagemV+"%");
-        
-        
-        
+        System.out.println("Total de votos:" + total);
+
+        double porcentagemB = votosBrancos * 100 / total;
+        System.out.println("Porcentagem de votos brancos:" + porcentagemB + "%");
+
+        double porcentagemN = votosNulos * 100 / total;
+        System.out.println("Porcentagem de votos nulos:" + porcentagemN + "%");
+
+        double porcentagemV = votosVálidos * 100 / total;
+        System.out.println("Porcentagem de votos válidos:" + porcentagemV + "%");
 
     }
 }

@@ -1,15 +1,15 @@
-
 package javaintroduction;
 
 import java.util.Scanner;
 
 public class MultiplicationTable {
+
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
-        
+
         System.out.println("Insira o número que deseja multiplicar: ");
         int numero = entrada.nextInt();
-        
+
         System.out.println("Número x1: " + numero * 1);
         System.out.println("Número x2: " + numero * 2);
         System.out.println("Número x3: " + numero * 3);
@@ -20,5 +20,6 @@ public class MultiplicationTable {
         System.out.println("Número x8: " + numero * 8);
         System.out.println("Número x9: " + numero * 9);
         System.out.println("Número x10: " + numero * 10);
-        
-}} 
+
+    }
+}
