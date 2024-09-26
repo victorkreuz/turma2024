@@ -8,7 +8,6 @@ public class att04 {
         Scanner entrada = new Scanner(System.in);
         double media = 0;
         double soma = 0;
-        double numMaiorMedia = 0;
 
         double num[] = new double[8];
         for (int i = 0; i < 8; i++) {
