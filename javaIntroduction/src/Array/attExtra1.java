@@ -77,22 +77,22 @@ public class attExtra1 {
     public void cadastrarNotas() {
         System.out.println("Insira a nota que deseja cadastrar: ");
         do {
-            System.out.println("Nota da disciplina A: ");
+            System.out.println("Nota do aluno " + alunos[notasCadastradas] + " na disciplina A: ");
             notasA[notasCadastradas] = entrada.nextDouble();
         } while (notasA[notasCadastradas] < 0 || notasA[notasCadastradas] > 10);
 
         do {
-            System.out.println("Nota da disciplina B: ");
+            System.out.println("Nota " + alunos[notasCadastradas] + " na disciplina B: ");
             notasB[notasCadastradas] = entrada.nextDouble();
         } while (notasB[notasCadastradas] < 0 || notasB[notasCadastradas] > 10);
 
         do {
-            System.out.println("Nota da disciplina C: ");
+            System.out.println("Nota " + alunos[notasCadastradas] + " na disciplina C: ");
             notasC[notasCadastradas] = entrada.nextDouble();
         } while (notasC[notasCadastradas] < 0 || notasC[notasCadastradas] > 10);
 
         do {
-            System.out.println("Nota da disciplina D: ");
+            System.out.println("Nota " + alunos[notasCadastradas] + " na disciplina D: ");
             notasD[notasCadastradas] = entrada.nextDouble();
         } while (notasD[notasCadastradas] < 0 || notasD[notasCadastradas] > 10);
         notasCadastradas++;
@@ -113,14 +113,16 @@ public class attExtra1 {
     }
 
     public void exibirAlunoComMaiorMedia() {
+        double maiorMedia = 0;
+        int indice = 0;
         for (int i = 0; i < alunosCadastrados; i++) {
-            if (medias[i] > maiorMedia) {
+            if (maiorMedia < medias[i]) {
                 maiorMedia = medias[i];
-                System.out.println("O aluno com maior média é " + alunos[i] + " com " + maiorMedia + ".");
-
+                indice = i;
             }
         }
-
+        System.out.println(alunos[indice]
+                + " ficou com a maior média geral. Média: " + medias[indice]);
     }
 
     public void exibirAlunoComMaiorNotaEmDeterminadaDisciplina() {
